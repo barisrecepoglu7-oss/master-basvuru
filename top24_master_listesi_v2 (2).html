@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barış Recepoğlu — TOP 24 Master Seçimi (v2)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#0a0f1a;color:#e0e4ec;min-height:100vh}
+.container{max-width:1600px;margin:0 auto;padding:20px}
+h1{font-family:'Playfair Display',serif;font-size:2rem;color:#fff;margin-bottom:4px}
+.subtitle{color:#7b8ba8;font-size:.9rem;margin-bottom:20px}
+.alert{background:linear-gradient(135deg,#1a3a1a,#0f2f0f);border:1px solid #22c55e40;border-radius:12px;padding:14px 18px;margin-bottom:16px}
+.alert h3{color:#4ade80;font-size:.9rem;margin-bottom:4px}
+.alert p{color:#86efac;font-size:.82rem;line-height:1.45}
+.info{background:linear-gradient(135deg,#111827,#1a2744);border:1px solid #2a3a5c;border-radius:12px;padding:14px 18px;margin-bottom:16px}
+.info h3{font-size:.9rem;color:#60a5fa;margin-bottom:5px}
+.info p{font-size:.82rem;line-height:1.5;color:#94a3b8}
+.info strong{color:#e2e8f0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.fbtn{padding:6px 14px;border-radius:18px;border:1px solid #2a3a5c;background:transparent;color:#94a3b8;cursor:pointer;font-size:.78rem;font-family:'DM Sans',sans-serif;transition:all .2s}
+.fbtn:hover{border-color:#60a5fa;color:#60a5fa}
+.fbtn.active{background:#1e40af;border-color:#1e40af;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:14px}
+.stat{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:8px 10px;text-align:center}
+.stat .num{font-size:1.4rem;font-weight:700;color:#60a5fa}
+.stat .label{font-size:.65rem;color:#64748b;margin-top:1px}
+table{width:100%;border-collapse:separate;border-spacing:0;background:#111827;border-radius:12px;overflow:hidden;border:1px solid #1e293b}
+thead{background:#0f172a;position:sticky;top:0;z-index:10}
+th{padding:9px 8px;text-align:left;font-size:.68rem;color:#64748b;text-transform:uppercase;letter-spacing:.4px;font-weight:600;border-bottom:1px solid #1e293b;white-space:nowrap}
+td{padding:8px 8px;font-size:.8rem;border-bottom:1px solid #1a2236;vertical-align:top}
+tr:hover td{background:#0f172a}
+tr:last-child td{border-bottom:none}
+.sn{font-weight:600;color:#f1f5f9;font-size:.83rem}
+.pr{color:#94a3b8;font-size:.72rem;margin-top:1px}
+.tag{display:inline-block;padding:2px 7px;border-radius:9px;font-size:.66rem;font-weight:600}
+.tag-r{background:#7c2d1240;color:#f87171;border:1px solid #7c2d1260}
+.tag-t{background:#14532d40;color:#4ade80;border:1px solid #14532d60}
+.tag-s{background:#1e3a5f40;color:#60a5fa;border:1px solid #1e3a5f60}
+.tag-uk{background:#312e8140;color:#a78bfa}
+.tag-us{background:#78350f40;color:#fbbf24}
+.ch{font-weight:600;font-size:.8rem}
+.ch-h{color:#4ade80}.ch-m{color:#fbbf24}.ch-l{color:#f87171}
+.gok{color:#4ade80}.gmb{color:#fbbf24}.ghd{color:#f87171}
+.fee{color:#e2e8f0;font-weight:500;font-size:.8rem}
+.sc{font-size:.76rem;line-height:1.3}
+.sp{display:inline-block;padding:1px 5px;border-radius:5px;font-size:.7rem;font-weight:700}
+.sp-h{background:#14532d40;color:#4ade80}.sp-m{background:#78350f40;color:#fbbf24}.sp-l{background:#1e293b;color:#64748b}
+.ivy{font-size:.68rem}
+.iv5{color:#4ade80}.iv4{color:#86efac}.iv3{color:#fbbf24}.iv2{color:#94a3b8}.iv1{color:#64748b}
+.nt{font-size:.72rem;color:#64748b;max-width:170px}
+.dl{font-size:.72rem;color:#94a3b8;max-width:150px}
+.scroll-wrap{overflow-x:auto;max-height:80vh}
+.footer{margin-top:18px;text-align:center;color:#475569;font-size:.76rem;padding:12px 0;border-top:1px solid #1e293b}
+.turkish{background:#dc262620;color:#fb923c;font-size:.62rem;padding:1px 4px;border-radius:3px;font-weight:600;margin-left:3px}
+.new{background:#2563eb30;color:#60a5fa;font-size:.62rem;padding:1px 4px;border-radius:3px;font-weight:600;margin-left:3px}
+.cost{font-size:.78rem;color:#fbbf24;font-weight:700}
+.dl-urg{color:#f87171;font-weight:700;font-size:.76rem}
+.dl-norm{color:#94a3b8;font-size:.76rem}
+.early{display:inline-block;background:linear-gradient(135deg,#7c2d92,#a855f7);color:#fff;font-size:.6rem;padding:1px 5px;border-radius:3px;font-weight:700;margin-top:3px;letter-spacing:.2px}
+@media(max-width:768px){h1{font-size:1.3rem}.container{padding:10px}td,th{padding:5px 6px;font-size:.73rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>TOP 25 — Final Master Seçimi</h1>
+<p class="subtitle">Barış Recepoğlu | 10 UK + 14 USA | Toplam Başvuru Masrafı + Son Tarih + Burs + Ivy MBA Kaldıracı | Nisan 2026</p>
+
+<div class="alert">
+<h3>🇹🇷 Warwick WMG — Türk Öğrencilere Otomatik £3,500 + Excellence Scholarship £15K'ya kadar</h3>
+<p>Toplam potansiyel indirim: <strong>£18,500</strong> (tuition'ın ~%48'i). Tüm listedeki en iyi fırsat/maliyet dengesi.</p>
+</div>
+
+<div class="info">
+<h3>🆕 Rochester Simon — %90+ Öğrenciye Burs Veren ABD Okulu</h3>
+<p>Simon Business School incoming MS öğrencilerinin <strong>%90'ından fazlasına burs</strong> veriyor. Tüm MS programları <strong>STEM-designated</strong> (3 yıla kadar ABD çalışma izni). US News #34 Business School. AACSB accredited. MS AI in Business programı senin Talp.ai hikayenle çok uyumlu.</p>
+</div>
+
+<div class="stats" id="stats"></div>
+<div class="filters" id="filters"></div>
+<div class="scroll-wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+<div class="footer">Toplam başvuru masrafı bütçesi: 🇬🇧 UK £1,545 · 🇺🇸 ABD $4,890. Tarihler 40% 10 Mayıs, kalanı 31 Mayıs'a kadar olan okulla vardır.<br>Burs yüzdeleri Barış'ın profiline (3.45 GPA + Talp.ai + Fibabanka) özel tahminlerdir. Başvuru öncesi her okulun güncel bilgilerini doğrulayın.</div>
+</div>
+<script>
+const S=[
+// === UK TOP 10 ===
+{n:"Warwick WMG",p:"MSc Innovation & Entrepreneurship",co:"UK",city:"Coventry",cat:"TARGET",ch:"35-50%",gpa:"2:2 + experience",gm:"Hayır",dur:"12 ay",acc:"Triple (AACSB, EQUIS, AMBA)",ivy:5,fee:"£38,430",sch:"🇹🇷 Otomatik £3,500 + Excellence £5K-£15K",sp:40,spL:"h",dl:"10 Mayıs 2026",cost:"£185",early:true,note:"#1 HEDEFİN. Türk bursu + Excellence birleşiyor. Max £18,500.",isTR:true},
+{n:"Warwick WMG",p:"MSc e-Business Management",co:"UK",city:"Coventry",cat:"TARGET",ch:"40-55%",gpa:"2:2 + experience",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£33,380",sch:"🇹🇷 Otomatik £3,500 + Excellence £5K-£15K",sp:40,spL:"h",dl:"20 Mayıs 2026",cost:"£180",note:"Alternatif Warwick yolu. Digital business. Aynı Türk bursu.",isTR:true},
+{n:"University of Edinburgh",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Edinburgh",cat:"TARGET",ch:"25-35%",gpa:"2:1 (esnek olabilir)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:5,fee:"£33,900",sch:"Edinburgh Global Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£200",early:true,note:"Russell Group top 5. Triple-accredited. Çok prestijli."},
+{n:"University of Strathclyde",p:"MSc Entrepreneurship, Innovation & Tech",co:"UK",city:"Glasgow",cat:"SAFE",ch:"55-70%",gpa:"2:2 kabul",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:3,fee:"£31,100",sch:"Postgrad scholarship £12K'ya kadar",sp:20,spL:"m",dl:"18 Mayıs 2026",cost:"£135",note:"Triple-accredited. Virtual Incubator. Waterloo ortaklığı."},
+{n:"University of Liverpool",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Liverpool",cat:"SAFE",ch:"50-65%",gpa:"2:2 kabul (2024 güncelleme)",gm:"Hayır",dur:"12 ay",acc:"AACSB, EQUIS",ivy:3,fee:"£27,500",sch:"Management School Scholarship",sp:15,spL:"m",dl:"31 Mayıs 2026",cost:"£115",note:"Russell Group. 2024'te giriş koşulları gevşetildi."},
+{n:"University of Leeds",p:"MSc International Business",co:"UK",city:"Leeds",cat:"TARGET",ch:"35-50%",gpa:"2:1 (esnek olabilir)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£31,250",sch:"Business School Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£165",note:"Triple-accredited. Russell Group."},
+{n:"University of Bath",p:"MSc Entrepreneurship & Management",co:"UK",city:"Bath",cat:"TARGET",ch:"30-45%",gpa:"2:1 (holistic değerlendirme)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£33,000",sch:"Dean's Scholarship for Excellence",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£170",note:"UK'de entrepreneurship'te çok güçlü. Küçük kohort."},
+{n:"Lancaster University",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Lancaster",cat:"TARGET",ch:"35-50%",gpa:"2:1 standart",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£30,900",sch:"Lancaster Scholarship",sp:10,spL:"l",dl:"15 Mayıs 2026",cost:"£150",note:"Management'ta UK top 10. Triple-accredited."},
+{n:"University of Exeter",p:"MSc Entrepreneurship & Innovation Mgmt",co:"UK",city:"Exeter",cat:"TARGET",ch:"35-50%",gpa:"2:1 (holistic)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£30,500",sch:"Business School Scholarship",sp:10,spL:"l",dl:"25 Mayıs 2026",cost:"£155",note:"Russell Group. Triple-accredited."},
+{n:"Aston University",p:"MSc Strategy & Entrepreneurship",co:"UK",city:"Birmingham",cat:"TARGET",ch:"40-55%",gpa:"2:2+ kabul olabilir",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:3,fee:"£24,500",sch:"Aston Excellence Award £5K",sp:15,spL:"m",dl:"22 Mayıs 2026",cost:"£90",note:"Triple-accredited. GPA esnek. İyi fiyat/kalite."},
+
+// === USA TOP 15 ===
+{n:"Babson College",p:"MSEL (Entrepreneurial Leadership)",co:"US",city:"Wellesley, MA",cat:"TARGET",ch:"15-25%",gpa:"Holistic (avg 3.0+)",gm:"Test-optional 2026",dur:"9 ay",acc:"AACSB",ivy:5,fee:"$52,000",sch:"Merit $5K — Full Tuition. Holistic değerlendirme.",sp:15,spL:"m",dl:"10 Mayıs 2026",cost:"$475",early:true,note:"#1 Entrepreneurship 32 yıl. LEAP projesi. Test-optional."},
+{n:"U. of Rochester (Simon)",p:"MS in AI in Business",co:"US",city:"Rochester, NY",cat:"TARGET",ch:"25-40%",gpa:"Holistic (GPA 2.8-3.7 aralığı kabul)",gm:"GMAT/GRE önerilir (opsiyonel olabilir)",dur:"11 ay",acc:"AACSB",ivy:4,fee:"$57,500",sch:"%90+ öğrenciye burs! Merit-based. Ciddi indirimler.",sp:35,spL:"h",dl:"10 Mayıs 2026",cost:"$400",early:true,note:"US News #34. STEM-designated (3 yıl OPT). %90+ burs oranı!",isNew:true},
+{n:"USC Marshall",p:"MS Management Studies",co:"US",city:"Los Angeles",cat:"REACH",ch:"15-25%",gpa:"3.0+ tercih",gm:"Opsiyonel",dur:"9 ay",acc:"AACSB",ivy:4,fee:"$52,000",sch:"Marshall Merit Award",sp:5,spL:"l",dl:"10 Mayıs 2026",cost:"$450",early:true,note:"LA tech/startup ekosistemi. Çok rekabetçi."},
+{n:"Hult International",p:"MSc Disruptive Innovation",co:"US",city:"Boston / London / Dubai",cat:"SAFE",ch:"35-50%",gpa:"Resmi minimum yok (holistic)",gm:"Hayır",dur:"12 ay",acc:"Triple (AACSB, EQUIS, AMBA)",ivy:3,fee:"$49,950",sch:"Entrepreneurial Impact Scholarship $5K-$20K",sp:30,spL:"h",dl:"10 Mayıs 2026",cost:"$385",early:true,note:"Triple-accredited. Entrepreneurial Impact burs senin için biçilmiş."},
+{n:"Northeastern University",p:"MS Management / Innovation",co:"US",city:"Boston",cat:"TARGET",ch:"25-40%",gpa:"3.0 tercih (holistic)",gm:"Opsiyonel",dur:"12-24 ay",acc:"AACSB",ivy:3,fee:"$46,000",sch:"Co-op + Merit Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"$385",note:"Co-op modeli (çalışarak okuma). Boston tech hub."},
+{n:"Fordham University",p:"MS Management",co:"US",city:"New York City",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:3,fee:"$45,000",sch:"Gabelli Merit Award",sp:10,spL:"l",dl:"17 Mayıs 2026",cost:"$350",note:"NYC Gabelli School. Güçlü corporate network."},
+{n:"Boston University",p:"MS Innovation & Entrepreneurship",co:"US",city:"Boston",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Hayır",dur:"12-16 ay",acc:"AACSB",ivy:3,fee:"$44,000",sch:"MET College Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"$370",note:"STEM-designated. MET College."},
+{n:"George Washington Univ.",p:"MS Technology Management",co:"US",city:"Washington DC",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12-18 ay",acc:"AACSB",ivy:3,fee:"$46,000",sch:"GW Merit Scholarship",sp:10,spL:"l",dl:"22 Mayıs 2026",cost:"$350",note:"DC lokasyonu. Government/policy network."},
+{n:"Stevens Institute of Tech",p:"MS Technology Management",co:"US",city:"Hoboken, NJ",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$42,000",sch:"Graduate Merit Scholarship",sp:15,spL:"m",dl:"28 Mayıs 2026",cost:"$300",note:"NYC karşısı. STEM-designated. AACSB."},
+{n:"Clark University",p:"MS Management (Startup focus)",co:"US",city:"Worcester, MA",cat:"SAFE",ch:"55-70%",gpa:"Esnek (holistic)",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$45,000",sch:"Merit Award $5K-$15K",sp:15,spL:"m",dl:"31 Mayıs 2026",cost:"$275",note:"STEM-designated. Boston yakını. AACSB."},
+{n:"Suffolk University",p:"MBA / MS Entrepreneurship",co:"US",city:"Boston",cat:"SAFE",ch:"55-70%",gpa:"Esnek (~84% kabul oranı)",gm:"Opsiyonel",dur:"12-24 ay",acc:"AACSB",ivy:2,fee:"$48,930",sch:"Merit Scholarship mevcut",sp:10,spL:"l",dl:"30 Mayıs 2026",cost:"$275",note:"Downtown Boston. Sawyer Business School. AACSB."},
+{n:"Drexel University",p:"MS Innovation Management",co:"US",city:"Philadelphia",cat:"TARGET",ch:"35-50%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$40,000",sch:"Dean's Scholarship",sp:10,spL:"l",dl:"14 Mayıs 2026",cost:"$325",note:"Co-op modeli. LeBow College. Philadelphia."},
+{n:"Univ. of San Francisco",p:"MS Entrepreneurship & Innovation",co:"US",city:"San Francisco",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$48,600",sch:"Jesuit Scholarship",sp:10,spL:"l",dl:"25 Mayıs 2026",cost:"$275",note:"SF startup ekosistemi. Jesuit (holistic bakış)."},
+{n:"American University",p:"MS Management: Entrepreneurship",co:"US",city:"Washington DC",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$47,000",sch:"Kogod Merit Scholarship",sp:10,spL:"l",dl:"20 Mayıs 2026",cost:"$275",note:"DC lokasyonu. Kogod School of Business. AACSB."},
+];
+
+const tbody=document.getElementById("tbody"),thead=document.getElementById("thead"),filtersDiv=document.getElementById("filters"),statsDiv=document.getElementById("stats");
+thead.innerHTML=`<tr><th>#</th><th>Okul & Program</th><th>Ülke / Şehir</th><th>Kat.</th><th>Kabul<br>Şansı</th><th>GPA</th><th>GMAT</th><th>Tuition</th><th>Toplam Başvuru<br>Masrafı</th><th>Burs Olanağı</th><th>Burs<br>Şansın</th><th>Son Başvuru<br>Tarihi</th><th>Ivy<br>MBA</th><th>Not</th></tr>`;
+
+let aCo="ALL",aCat="ALL";
+function cT(c){return c==="SAFE"?`<span class="tag tag-s">SAFE</span>`:c==="TARGET"?`<span class="tag tag-t">TARGET</span>`:`<span class="tag tag-r">REACH</span>`}
+function coT(c){return c==="UK"?`<span class="tag tag-uk">🇬🇧 UK</span>`:`<span class="tag tag-us">🇺🇸 ABD</span>`}
+function chC(c){const n=parseInt(c);return n>=50?"ch-h":n>=25?"ch-m":"ch-l"}
+function gC(g){return(g.includes("2:2")||g.includes("yok")||g.includes("Esnek")||g.includes("84%"))?"gok":(g.includes("Holistic")||g.includes("exp")||g.includes("esnek")||g.includes("olabilir"))?"gmb":"ghd"}
+function ivH(n){const c=n>=4?"iv5":n>=3?"iv3":"iv2";return`<span class="ivy ${c}">${"★".repeat(n)}${"☆".repeat(5-n)}</span>`}
+function spB(sp,l){const c=l==="h"?"sp-h":l==="m"?"sp-m":"sp-l";return`<span class="sp ${c}">~${sp}%</span>`}
+
+function render(){
+  const f=S.filter(s=>(aCo==="ALL"||s.co===aCo)&&(aCat==="ALL"||s.cat===aCat));
+  const ukCost=f.filter(s=>s.co==="UK").reduce((t,s)=>{const m=s.cost&&s.cost.match(/\d+/);return t+(m?parseInt(m[0]):0)},0);
+  const usCost=f.filter(s=>s.co==="US").reduce((t,s)=>{const m=s.cost&&s.cost.match(/\d+/);return t+(m?parseInt(m[0]):0)},0);
+  const totalStr=(ukCost>0&&usCost>0)?`£${ukCost.toLocaleString()} + $${usCost.toLocaleString()}`:(ukCost>0?`£${ukCost.toLocaleString()}`:usCost>0?`$${usCost.toLocaleString()}`:"—");
+  const rowsHtml=f.map((s,i)=>`<tr>
+    <td style="color:#475569;font-size:.72rem">${i+1}</td>
+    <td><div class="sn">${s.n}${s.isTR?'<span class="turkish">🇹🇷 TÜRK BURSU</span>':''}${s.isNew?'<span class="new">YENİ</span>':''}</div><div class="pr">${s.p}</div></td>
+    <td>${coT(s.co)}<br><span style="font-size:.72rem;color:#64748b">${s.city}</span></td>
+    <td>${cT(s.cat)}</td>
+    <td class="ch ${chC(s.ch)}">${s.ch}</td>
+    <td class="${gC(s.gpa)}" style="font-size:.75rem">${s.gpa}</td>
+    <td style="font-size:.75rem">${s.gm}</td>
+    <td class="fee">${s.fee}</td>
+    <td class="cost">${s.cost||"—"}</td>
+    <td class="sc">${s.sch}</td>
+    <td>${spB(s.sp,s.spL)}</td>
+    <td><div class="${s.dl==="10 Mayıs 2026"?"dl-urg":"dl-norm"}">${s.dl}</div>${s.early?'<span class="early">⚡ ERKEN BAŞVURU VAR</span>':''}</td>
+    <td>${ivH(s.ivy)}</td>
+    <td class="nt">${s.note}</td>
+  </tr>`).join("");
+  const totalRow=`<tr style="background:#0f172a;border-top:2px solid #fbbf24"><td colspan="8" style="text-align:right;font-weight:700;color:#fbbf24;font-size:.82rem;padding:12px 10px;letter-spacing:.5px">💰 TOPLAM BAŞVURU MASRAFI →</td><td style="color:#fbbf24;font-weight:800;font-size:.95rem;padding:12px 10px;background:#1a1410">${totalStr}</td><td colspan="5" style="color:#475569;font-size:.72rem;padding:12px 10px">${f.length} okul</td></tr>`;
+  tbody.innerHTML=rowsHtml+totalRow;
+  const uk=f.filter(s=>s.co==="UK").length,us=f.filter(s=>s.co==="US").length;
+  const sa=f.filter(s=>s.cat==="SAFE").length,ta=f.filter(s=>s.cat==="TARGET").length,re=f.filter(s=>s.cat==="REACH").length;
+  const urg=f.filter(s=>s.dl==="10 Mayıs 2026").length,erk=f.filter(s=>s.early).length;
+  statsDiv.innerHTML=`<div class="stat"><div class="num">${f.length}</div><div class="label">Toplam</div></div><div class="stat"><div class="num">${uk}</div><div class="label">🇬🇧 UK</div></div><div class="stat"><div class="num">${us}</div><div class="label">🇺🇸 ABD</div></div><div class="stat"><div class="num" style="color:#fbbf24;font-size:1.1rem">£${ukCost}</div><div class="label">UK Masraf</div></div><div class="stat"><div class="num" style="color:#fbbf24;font-size:1.1rem">$${usCost}</div><div class="label">ABD Masraf</div></div><div class="stat"><div class="num" style="color:#f87171">${urg}</div><div class="label">10 Mayıs</div></div><div class="stat"><div class="num" style="color:#a855f7">${erk}</div><div class="label">⚡ Erken</div></div><div class="stat"><div class="num">${sa}</div><div class="label">SAFE</div></div><div class="stat"><div class="num">${ta}</div><div class="label">TARGET</div></div><div class="stat"><div class="num">${re}</div><div class="label">REACH</div></div>`;
+}
+function renderF(){
+  let h="";
+  ["ALL","UK","US"].forEach(c=>{const l=c==="ALL"?"Tümü":c==="UK"?"🇬🇧 UK":"🇺🇸 ABD";h+=`<button class="fbtn ${aCo===c?'active':''}" onclick="sC('${c}')">${l}</button>`});
+  h+="<span style='color:#2a3a5c;padding:6px'>|</span>";
+  ["ALL","SAFE","TARGET","REACH"].forEach(c=>{h+=`<button class="fbtn ${aCat===c?'active':''}" onclick="sT('${c}')">${c==="ALL"?"Tümü":c}</button>`});
+  filtersDiv.innerHTML=h;
+}
+function sC(c){aCo=c;renderF();render()}
+function sT(c){aCat=c;renderF();render()}
+renderF();render();
+</script>
+</body>
+</html>
