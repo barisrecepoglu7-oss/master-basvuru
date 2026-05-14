@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Barış Recepoğlu — TOP 24 Master Seçimi (v2)</title>
+<title>Barış Recepoğlu — TOP 19 Master Seçimi (v3)</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
@@ -59,13 +59,15 @@ tr:last-child td{border-bottom:none}
 .dl-urg{color:#f87171;font-weight:700;font-size:.76rem}
 .dl-norm{color:#94a3b8;font-size:.76rem}
 .early{display:inline-block;background:linear-gradient(135deg,#7c2d92,#a855f7);color:#fff;font-size:.6rem;padding:1px 5px;border-radius:3px;font-weight:700;margin-top:3px;letter-spacing:.2px}
+.applied{display:inline-flex;align-items:center;gap:3px;background:#16331f;color:#4ade80;font-size:.72rem;padding:3px 8px;border-radius:5px;font-weight:700;border:1px solid #2f6b3f}
+.notapplied{display:inline-block;color:#475569;font-size:.72rem;font-weight:600}
 @media(max-width:768px){h1{font-size:1.3rem}.container{padding:10px}td,th{padding:5px 6px;font-size:.73rem}}
 </style>
 </head>
 <body>
 <div class="container">
-<h1>TOP 25 — Final Master Seçimi</h1>
-<p class="subtitle">Barış Recepoğlu | 10 UK + 14 USA | Toplam Başvuru Masrafı + Son Tarih + Burs + Ivy MBA Kaldıracı | Nisan 2026</p>
+<h1>TOP 19 — Rafine Master Seçimi</h1>
+<p class="subtitle">Barış Recepoğlu | 10 UK + 9 USA | Toplam Başvuru Masrafı + Son Tarih + Burs + Ivy MBA Kaldıracı | Nisan 2026</p>
 
 <div class="alert">
 <h3>🇹🇷 Warwick WMG — Türk Öğrencilere Otomatik £3,500 + Excellence Scholarship £15K'ya kadar</h3>
@@ -80,41 +82,36 @@ tr:last-child td{border-bottom:none}
 <div class="stats" id="stats"></div>
 <div class="filters" id="filters"></div>
 <div class="scroll-wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
-<div class="footer">Toplam başvuru masrafı bütçesi: 🇬🇧 UK £1,545 · 🇺🇸 ABD $4,890. Tarihler 40% 10 Mayıs, kalanı 31 Mayıs'a kadar olan okulla vardır.<br>Burs yüzdeleri Barış'ın profiline (3.45 GPA + Talp.ai + Fibabanka) özel tahminlerdir. Başvuru öncesi her okulun güncel bilgilerini doğrulayın.</div>
+<div class="footer">Toplam başvuru masrafı bütçesi: 🇬🇧 UK £1,770 · 🇺🇸 ABD $3,945. Tarihler 40% 10 Mayıs, kalanı 31 Mayıs'a kadar olan okulla vardır.<br>Burs yüzdeleri Barış'ın profiline (3.45 GPA + Talp.ai + Fibabanka) özel tahminlerdir. Başvuru öncesi her okulun güncel bilgilerini doğrulayın.</div>
 </div>
 <script>
 const S=[
 // === UK TOP 10 ===
-{n:"Warwick WMG",p:"MSc Innovation & Entrepreneurship",co:"UK",city:"Coventry",cat:"TARGET",ch:"35-50%",gpa:"2:2 + experience",gm:"Hayır",dur:"12 ay",acc:"Triple (AACSB, EQUIS, AMBA)",ivy:5,fee:"£38,430",sch:"🇹🇷 Otomatik £3,500 + Excellence £5K-£15K",sp:40,spL:"h",dl:"10 Mayıs 2026",cost:"£185",early:true,note:"#1 HEDEFİN. Türk bursu + Excellence birleşiyor. Max £18,500.",isTR:true},
-{n:"Warwick WMG",p:"MSc e-Business Management",co:"UK",city:"Coventry",cat:"TARGET",ch:"40-55%",gpa:"2:2 + experience",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£33,380",sch:"🇹🇷 Otomatik £3,500 + Excellence £5K-£15K",sp:40,spL:"h",dl:"20 Mayıs 2026",cost:"£180",note:"Alternatif Warwick yolu. Digital business. Aynı Türk bursu.",isTR:true},
-{n:"University of Edinburgh",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Edinburgh",cat:"TARGET",ch:"25-35%",gpa:"2:1 (esnek olabilir)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:5,fee:"£33,900",sch:"Edinburgh Global Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£200",early:true,note:"Russell Group top 5. Triple-accredited. Çok prestijli."},
-{n:"University of Strathclyde",p:"MSc Entrepreneurship, Innovation & Tech",co:"UK",city:"Glasgow",cat:"SAFE",ch:"55-70%",gpa:"2:2 kabul",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:3,fee:"£31,100",sch:"Postgrad scholarship £12K'ya kadar",sp:20,spL:"m",dl:"18 Mayıs 2026",cost:"£135",note:"Triple-accredited. Virtual Incubator. Waterloo ortaklığı."},
-{n:"University of Liverpool",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Liverpool",cat:"SAFE",ch:"50-65%",gpa:"2:2 kabul (2024 güncelleme)",gm:"Hayır",dur:"12 ay",acc:"AACSB, EQUIS",ivy:3,fee:"£27,500",sch:"Management School Scholarship",sp:15,spL:"m",dl:"31 Mayıs 2026",cost:"£115",note:"Russell Group. 2024'te giriş koşulları gevşetildi."},
-{n:"University of Leeds",p:"MSc International Business",co:"UK",city:"Leeds",cat:"TARGET",ch:"35-50%",gpa:"2:1 (esnek olabilir)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£31,250",sch:"Business School Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£165",note:"Triple-accredited. Russell Group."},
-{n:"University of Bath",p:"MSc Entrepreneurship & Management",co:"UK",city:"Bath",cat:"TARGET",ch:"30-45%",gpa:"2:1 (holistic değerlendirme)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£33,000",sch:"Dean's Scholarship for Excellence",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£170",note:"UK'de entrepreneurship'te çok güçlü. Küçük kohort."},
-{n:"Lancaster University",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Lancaster",cat:"TARGET",ch:"35-50%",gpa:"2:1 standart",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£30,900",sch:"Lancaster Scholarship",sp:10,spL:"l",dl:"15 Mayıs 2026",cost:"£150",note:"Management'ta UK top 10. Triple-accredited."},
-{n:"University of Exeter",p:"MSc Entrepreneurship & Innovation Mgmt",co:"UK",city:"Exeter",cat:"TARGET",ch:"35-50%",gpa:"2:1 (holistic)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£30,500",sch:"Business School Scholarship",sp:10,spL:"l",dl:"25 Mayıs 2026",cost:"£155",note:"Russell Group. Triple-accredited."},
-{n:"Aston University",p:"MSc Strategy & Entrepreneurship",co:"UK",city:"Birmingham",cat:"TARGET",ch:"40-55%",gpa:"2:2+ kabul olabilir",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:3,fee:"£24,500",sch:"Aston Excellence Award £5K",sp:15,spL:"m",dl:"22 Mayıs 2026",cost:"£90",note:"Triple-accredited. GPA esnek. İyi fiyat/kalite."},
+{n:"Warwick WMG",p:"MSc Innovation & Entrepreneurship",co:"UK",city:"Coventry",cat:"TARGET",ch:"35-50%",gpa:"2:2 + experience",gm:"Hayır",dur:"12 ay",acc:"Triple (AACSB, EQUIS, AMBA)",ivy:5,fee:"£38,430",sch:"🇹🇷 Otomatik £3,500 + Excellence £5K-£15K",sp:40,spL:"h",dl:"10 Mayıs 2026",cost:"£210",early:true,applied:true,note:"#1 HEDEFİN. Türk bursu + Excellence birleşiyor. Max £18,500.",isTR:true},
+{n:"Warwick WMG",p:"MSc e-Business Management",co:"UK",city:"Coventry",cat:"TARGET",ch:"40-55%",gpa:"2:2 + experience",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£33,380",sch:"🇹🇷 Otomatik £3,500 + Excellence £5K-£15K",sp:40,spL:"h",dl:"20 Mayıs 2026",cost:"£205",applied:true,note:"Alternatif Warwick yolu. Digital business. Aynı Türk bursu.",isTR:true},
+{n:"University of Edinburgh",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Edinburgh",cat:"TARGET",ch:"25-35%",gpa:"2:1 (esnek olabilir)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:5,fee:"£33,900",sch:"Edinburgh Global Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£230",early:true,applied:true,note:"Russell Group top 5. Triple-accredited. Çok prestijli."},
+{n:"University of Strathclyde",p:"MSc Entrepreneurship, Innovation & Tech",co:"UK",city:"Glasgow",cat:"SAFE",ch:"55-70%",gpa:"2:2 kabul",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:3,fee:"£31,100",sch:"Postgrad scholarship £12K'ya kadar",sp:20,spL:"m",dl:"18 Mayıs 2026",cost:"£155",applied:true,note:"Triple-accredited. Virtual Incubator. Waterloo ortaklığı."},
+{n:"University of Liverpool",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Liverpool",cat:"SAFE",ch:"50-65%",gpa:"2:2 kabul (2024 güncelleme)",gm:"Hayır",dur:"12 ay",acc:"AACSB, EQUIS",ivy:3,fee:"£27,500",sch:"Management School Scholarship",sp:15,spL:"m",dl:"31 Mayıs 2026",cost:"£130",note:"Russell Group. 2024'te giriş koşulları gevşetildi."},
+{n:"University of Leeds",p:"MSc International Business",co:"UK",city:"Leeds",cat:"TARGET",ch:"35-50%",gpa:"2:1 (esnek olabilir)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£31,250",sch:"Business School Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£190",applied:true,note:"Triple-accredited. Russell Group."},
+{n:"University of Bath",p:"MSc Entrepreneurship & Management",co:"UK",city:"Bath",cat:"TARGET",ch:"30-45%",gpa:"2:1 (holistic değerlendirme)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£33,000",sch:"Dean's Scholarship for Excellence",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"£195",applied:true,note:"UK'de entrepreneurship'te çok güçlü. Küçük kohort."},
+{n:"Lancaster University",p:"MSc Entrepreneurship & Innovation",co:"UK",city:"Lancaster",cat:"TARGET",ch:"35-50%",gpa:"2:1 standart",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£30,900",sch:"Lancaster Scholarship",sp:10,spL:"l",dl:"15 Mayıs 2026",cost:"£170",applied:true,note:"Management'ta UK top 10. Triple-accredited."},
+{n:"University of Exeter",p:"MSc Entrepreneurship & Innovation Mgmt",co:"UK",city:"Exeter",cat:"TARGET",ch:"35-50%",gpa:"2:1 (holistic)",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:4,fee:"£30,500",sch:"Business School Scholarship",sp:10,spL:"l",dl:"25 Mayıs 2026",cost:"£180",applied:true,note:"Russell Group. Triple-accredited."},
+{n:"Aston University",p:"MSc Strategy & Entrepreneurship",co:"UK",city:"Birmingham",cat:"TARGET",ch:"40-55%",gpa:"2:2+ kabul olabilir",gm:"Hayır",dur:"12 ay",acc:"Triple",ivy:3,fee:"£24,500",sch:"Aston Excellence Award £5K",sp:15,spL:"m",dl:"22 Mayıs 2026",cost:"£105",note:"Triple-accredited. GPA esnek. İyi fiyat/kalite."},
 
 // === USA TOP 15 ===
-{n:"Babson College",p:"MSEL (Entrepreneurial Leadership)",co:"US",city:"Wellesley, MA",cat:"TARGET",ch:"15-25%",gpa:"Holistic (avg 3.0+)",gm:"Test-optional 2026",dur:"9 ay",acc:"AACSB",ivy:5,fee:"$52,000",sch:"Merit $5K — Full Tuition. Holistic değerlendirme.",sp:15,spL:"m",dl:"10 Mayıs 2026",cost:"$475",early:true,note:"#1 Entrepreneurship 32 yıl. LEAP projesi. Test-optional."},
-{n:"U. of Rochester (Simon)",p:"MS in AI in Business",co:"US",city:"Rochester, NY",cat:"TARGET",ch:"25-40%",gpa:"Holistic (GPA 2.8-3.7 aralığı kabul)",gm:"GMAT/GRE önerilir (opsiyonel olabilir)",dur:"11 ay",acc:"AACSB",ivy:4,fee:"$57,500",sch:"%90+ öğrenciye burs! Merit-based. Ciddi indirimler.",sp:35,spL:"h",dl:"10 Mayıs 2026",cost:"$400",early:true,note:"US News #34. STEM-designated (3 yıl OPT). %90+ burs oranı!",isNew:true},
-{n:"USC Marshall",p:"MS Management Studies",co:"US",city:"Los Angeles",cat:"REACH",ch:"15-25%",gpa:"3.0+ tercih",gm:"Opsiyonel",dur:"9 ay",acc:"AACSB",ivy:4,fee:"$52,000",sch:"Marshall Merit Award",sp:5,spL:"l",dl:"10 Mayıs 2026",cost:"$450",early:true,note:"LA tech/startup ekosistemi. Çok rekabetçi."},
-{n:"Hult International",p:"MSc Disruptive Innovation",co:"US",city:"Boston / London / Dubai",cat:"SAFE",ch:"35-50%",gpa:"Resmi minimum yok (holistic)",gm:"Hayır",dur:"12 ay",acc:"Triple (AACSB, EQUIS, AMBA)",ivy:3,fee:"$49,950",sch:"Entrepreneurial Impact Scholarship $5K-$20K",sp:30,spL:"h",dl:"10 Mayıs 2026",cost:"$385",early:true,note:"Triple-accredited. Entrepreneurial Impact burs senin için biçilmiş."},
-{n:"Northeastern University",p:"MS Management / Innovation",co:"US",city:"Boston",cat:"TARGET",ch:"25-40%",gpa:"3.0 tercih (holistic)",gm:"Opsiyonel",dur:"12-24 ay",acc:"AACSB",ivy:3,fee:"$46,000",sch:"Co-op + Merit Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"$385",note:"Co-op modeli (çalışarak okuma). Boston tech hub."},
-{n:"Fordham University",p:"MS Management",co:"US",city:"New York City",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:3,fee:"$45,000",sch:"Gabelli Merit Award",sp:10,spL:"l",dl:"17 Mayıs 2026",cost:"$350",note:"NYC Gabelli School. Güçlü corporate network."},
-{n:"Boston University",p:"MS Innovation & Entrepreneurship",co:"US",city:"Boston",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Hayır",dur:"12-16 ay",acc:"AACSB",ivy:3,fee:"$44,000",sch:"MET College Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"$370",note:"STEM-designated. MET College."},
-{n:"George Washington Univ.",p:"MS Technology Management",co:"US",city:"Washington DC",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12-18 ay",acc:"AACSB",ivy:3,fee:"$46,000",sch:"GW Merit Scholarship",sp:10,spL:"l",dl:"22 Mayıs 2026",cost:"$350",note:"DC lokasyonu. Government/policy network."},
-{n:"Stevens Institute of Tech",p:"MS Technology Management",co:"US",city:"Hoboken, NJ",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$42,000",sch:"Graduate Merit Scholarship",sp:15,spL:"m",dl:"28 Mayıs 2026",cost:"$300",note:"NYC karşısı. STEM-designated. AACSB."},
-{n:"Clark University",p:"MS Management (Startup focus)",co:"US",city:"Worcester, MA",cat:"SAFE",ch:"55-70%",gpa:"Esnek (holistic)",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$45,000",sch:"Merit Award $5K-$15K",sp:15,spL:"m",dl:"31 Mayıs 2026",cost:"$275",note:"STEM-designated. Boston yakını. AACSB."},
-{n:"Suffolk University",p:"MBA / MS Entrepreneurship",co:"US",city:"Boston",cat:"SAFE",ch:"55-70%",gpa:"Esnek (~84% kabul oranı)",gm:"Opsiyonel",dur:"12-24 ay",acc:"AACSB",ivy:2,fee:"$48,930",sch:"Merit Scholarship mevcut",sp:10,spL:"l",dl:"30 Mayıs 2026",cost:"$275",note:"Downtown Boston. Sawyer Business School. AACSB."},
-{n:"Drexel University",p:"MS Innovation Management",co:"US",city:"Philadelphia",cat:"TARGET",ch:"35-50%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$40,000",sch:"Dean's Scholarship",sp:10,spL:"l",dl:"14 Mayıs 2026",cost:"$325",note:"Co-op modeli. LeBow College. Philadelphia."},
-{n:"Univ. of San Francisco",p:"MS Entrepreneurship & Innovation",co:"US",city:"San Francisco",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$48,600",sch:"Jesuit Scholarship",sp:10,spL:"l",dl:"25 Mayıs 2026",cost:"$275",note:"SF startup ekosistemi. Jesuit (holistic bakış)."},
-{n:"American University",p:"MS Management: Entrepreneurship",co:"US",city:"Washington DC",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$47,000",sch:"Kogod Merit Scholarship",sp:10,spL:"l",dl:"20 Mayıs 2026",cost:"$275",note:"DC lokasyonu. Kogod School of Business. AACSB."},
+{n:"Babson College",p:"MSEL (Entrepreneurial Leadership)",co:"US",city:"Wellesley, MA",cat:"TARGET",ch:"15-25%",gpa:"Holistic (avg 3.0+)",gm:"Test-optional 2026",dur:"9 ay",acc:"AACSB",ivy:5,fee:"$52,000",sch:"Merit $5K — Full Tuition. Holistic değerlendirme.",sp:15,spL:"m",dl:"10 Mayıs 2026",cost:"$545",early:true,applied:true,note:"#1 Entrepreneurship 32 yıl. LEAP projesi. Test-optional."},
+{n:"U. of Rochester (Simon)",p:"MS in AI in Business",co:"US",city:"Rochester, NY",cat:"TARGET",ch:"25-40%",gpa:"Holistic (GPA 2.8-3.7 aralığı kabul)",gm:"GMAT/GRE önerilir (opsiyonel olabilir)",dur:"11 ay",acc:"AACSB",ivy:4,fee:"$57,500",sch:"%90+ öğrenciye burs! Merit-based. Ciddi indirimler.",sp:35,spL:"h",dl:"10 Mayıs 2026",cost:"$460",early:true,applied:true,note:"US News #34. STEM-designated (3 yıl OPT). %90+ burs oranı!",isNew:true},
+{n:"USC Marshall",p:"MS Management Studies",co:"US",city:"Los Angeles",cat:"REACH",ch:"15-25%",gpa:"3.0+ tercih",gm:"Opsiyonel",dur:"9 ay",acc:"AACSB",ivy:4,fee:"$52,000",sch:"Marshall Merit Award",sp:5,spL:"l",dl:"10 Mayıs 2026",cost:"$515",early:true,applied:true,note:"LA tech/startup ekosistemi. Çok rekabetçi."},
+{n:"Hult International",p:"MSc Disruptive Innovation",co:"US",city:"Boston / London / Dubai",cat:"SAFE",ch:"35-50%",gpa:"Resmi minimum yok (holistic)",gm:"Hayır",dur:"12 ay",acc:"Triple (AACSB, EQUIS, AMBA)",ivy:3,fee:"$49,950",sch:"Entrepreneurial Impact Scholarship $5K-$20K",sp:30,spL:"h",dl:"10 Mayıs 2026",cost:"$440",early:true,applied:true,note:"Triple-accredited. Entrepreneurial Impact burs senin için biçilmiş."},
+{n:"Northeastern University",p:"MS Management / Innovation",co:"US",city:"Boston",cat:"TARGET",ch:"25-40%",gpa:"3.0 tercih (holistic)",gm:"Opsiyonel",dur:"12-24 ay",acc:"AACSB",ivy:3,fee:"$46,000",sch:"Co-op + Merit Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"$440",applied:true,note:"Co-op modeli (çalışarak okuma). Boston tech hub."},
+{n:"Fordham University",p:"MS Management",co:"US",city:"New York City",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:3,fee:"$45,000",sch:"Gabelli Merit Award",sp:10,spL:"l",dl:"17 Mayıs 2026",cost:"$400",note:"NYC Gabelli School. Güçlü corporate network."},
+{n:"Boston University",p:"MS Innovation & Entrepreneurship",co:"US",city:"Boston",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Hayır",dur:"12-16 ay",acc:"AACSB",ivy:3,fee:"$44,000",sch:"MET College Scholarship",sp:10,spL:"l",dl:"10 Mayıs 2026",cost:"$425",note:"STEM-designated. MET College."},
+{n:"George Washington Univ.",p:"MS Technology Management",co:"US",city:"Washington DC",cat:"TARGET",ch:"30-45%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12-18 ay",acc:"AACSB",ivy:3,fee:"$46,000",sch:"GW Merit Scholarship",sp:10,spL:"l",dl:"22 Mayıs 2026",cost:"$400",note:"DC lokasyonu. Government/policy network."},
+{n:"Univ. of San Francisco",p:"MS Entrepreneurship & Innovation",co:"US",city:"San Francisco",cat:"SAFE",ch:"50-65%",gpa:"Holistic değerlendirme",gm:"Opsiyonel",dur:"12 ay",acc:"AACSB",ivy:2,fee:"$48,600",sch:"Jesuit Scholarship",sp:10,spL:"l",dl:"25 Mayıs 2026",cost:"$320",note:"SF startup ekosistemi. Jesuit (holistic bakış)."},
 ];
 
 const tbody=document.getElementById("tbody"),thead=document.getElementById("thead"),filtersDiv=document.getElementById("filters"),statsDiv=document.getElementById("stats");
-thead.innerHTML=`<tr><th>#</th><th>Okul & Program</th><th>Ülke / Şehir</th><th>Kat.</th><th>Kabul<br>Şansı</th><th>GPA</th><th>GMAT</th><th>Tuition</th><th>Toplam Başvuru<br>Masrafı</th><th>Burs Olanağı</th><th>Burs<br>Şansın</th><th>Son Başvuru<br>Tarihi</th><th>Ivy<br>MBA</th><th>Not</th></tr>`;
+thead.innerHTML=`<tr><th>#</th><th>Okul & Program</th><th>Ülke / Şehir</th><th>Kat.</th><th>Kabul<br>Şansı</th><th>GPA</th><th>GMAT</th><th>Tuition</th><th>Toplam Başvuru<br>Masrafı</th><th>Başvuru<br>Durumu</th><th>Burs Olanağı</th><th>Burs<br>Şansın</th><th>Son Başvuru<br>Tarihi</th><th>Ivy<br>MBA</th><th>Not</th></tr>`;
 
 let aCo="ALL",aCat="ALL";
 function cT(c){return c==="SAFE"?`<span class="tag tag-s">SAFE</span>`:c==="TARGET"?`<span class="tag tag-t">TARGET</span>`:`<span class="tag tag-r">REACH</span>`}
@@ -139,18 +136,20 @@ function render(){
     <td style="font-size:.75rem">${s.gm}</td>
     <td class="fee">${s.fee}</td>
     <td class="cost">${s.cost||"—"}</td>
+    <td>${s.applied?'<span class="applied">✓ Başvuruldu</span>':'<span class="notapplied">—</span>'}</td>
     <td class="sc">${s.sch}</td>
     <td>${spB(s.sp,s.spL)}</td>
     <td><div class="${s.dl==="10 Mayıs 2026"?"dl-urg":"dl-norm"}">${s.dl}</div>${s.early?'<span class="early">⚡ ERKEN BAŞVURU VAR</span>':''}</td>
     <td>${ivH(s.ivy)}</td>
     <td class="nt">${s.note}</td>
   </tr>`).join("");
-  const totalRow=`<tr style="background:#0f172a;border-top:2px solid #fbbf24"><td colspan="8" style="text-align:right;font-weight:700;color:#fbbf24;font-size:.82rem;padding:12px 10px;letter-spacing:.5px">💰 TOPLAM BAŞVURU MASRAFI →</td><td style="color:#fbbf24;font-weight:800;font-size:.95rem;padding:12px 10px;background:#1a1410">${totalStr}</td><td colspan="5" style="color:#475569;font-size:.72rem;padding:12px 10px">${f.length} okul</td></tr>`;
+  const totalRow=`<tr style="background:#0f172a;border-top:2px solid #fbbf24"><td colspan="8" style="text-align:right;font-weight:700;color:#fbbf24;font-size:.82rem;padding:12px 10px;letter-spacing:.5px">💰 TOPLAM BAŞVURU MASRAFI →</td><td style="color:#fbbf24;font-weight:800;font-size:.95rem;padding:12px 10px;background:#1a1410">${totalStr}</td><td colspan="6" style="color:#475569;font-size:.72rem;padding:12px 10px">${f.length} okul</td></tr>`;
   tbody.innerHTML=rowsHtml+totalRow;
   const uk=f.filter(s=>s.co==="UK").length,us=f.filter(s=>s.co==="US").length;
   const sa=f.filter(s=>s.cat==="SAFE").length,ta=f.filter(s=>s.cat==="TARGET").length,re=f.filter(s=>s.cat==="REACH").length;
   const urg=f.filter(s=>s.dl==="10 Mayıs 2026").length,erk=f.filter(s=>s.early).length;
-  statsDiv.innerHTML=`<div class="stat"><div class="num">${f.length}</div><div class="label">Toplam</div></div><div class="stat"><div class="num">${uk}</div><div class="label">🇬🇧 UK</div></div><div class="stat"><div class="num">${us}</div><div class="label">🇺🇸 ABD</div></div><div class="stat"><div class="num" style="color:#fbbf24;font-size:1.1rem">£${ukCost}</div><div class="label">UK Masraf</div></div><div class="stat"><div class="num" style="color:#fbbf24;font-size:1.1rem">$${usCost}</div><div class="label">ABD Masraf</div></div><div class="stat"><div class="num" style="color:#f87171">${urg}</div><div class="label">10 Mayıs</div></div><div class="stat"><div class="num" style="color:#a855f7">${erk}</div><div class="label">⚡ Erken</div></div><div class="stat"><div class="num">${sa}</div><div class="label">SAFE</div></div><div class="stat"><div class="num">${ta}</div><div class="label">TARGET</div></div><div class="stat"><div class="num">${re}</div><div class="label">REACH</div></div>`;
+  const apCount=f.filter(s=>s.applied).length;
+  statsDiv.innerHTML=`<div class="stat"><div class="num">${f.length}</div><div class="label">Toplam</div></div><div class="stat"><div class="num">${uk}</div><div class="label">🇬🇧 UK</div></div><div class="stat"><div class="num">${us}</div><div class="label">🇺🇸 ABD</div></div><div class="stat"><div class="num" style="color:#fbbf24;font-size:1.1rem">£${ukCost}</div><div class="label">UK Masraf</div></div><div class="stat"><div class="num" style="color:#fbbf24;font-size:1.1rem">$${usCost}</div><div class="label">ABD Masraf</div></div><div class="stat"><div class="num" style="color:#f87171">${urg}</div><div class="label">10 Mayıs</div></div><div class="stat"><div class="num" style="color:#a855f7">${erk}</div><div class="label">⚡ Erken</div></div><div class="stat"><div class="num" style="color:#4ade80">${apCount}</div><div class="label">✓ Başvuruldu</div></div><div class="stat"><div class="num">${sa}</div><div class="label">SAFE</div></div><div class="stat"><div class="num">${ta}</div><div class="label">TARGET</div></div><div class="stat"><div class="num">${re}</div><div class="label">REACH</div></div>`;
 }
 function renderF(){
   let h="";
